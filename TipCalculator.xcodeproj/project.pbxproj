@@ -12,6 +12,7 @@
 		A639E0661D1752D800D72AD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A639E0641D1752D800D72AD7 /* Main.storyboard */; };
 		A639E0681D1752D800D72AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A639E0671D1752D800D72AD7 /* Assets.xcassets */; };
 		A639E06B1D1752D800D72AD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A639E0691D1752D800D72AD7 /* LaunchScreen.storyboard */; };
+		A639E0731D17536100D72AD7 /* TipCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639E0721D17536100D72AD7 /* TipCalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A639E0671D1752D800D72AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A639E06A1D1752D800D72AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A639E06C1D1752D800D72AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A639E0721D17536100D72AD7 /* TipCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				A639E0601D1752D800D72AD7 /* AppDelegate.swift */,
 				A639E0621D1752D800D72AD7 /* ViewController.swift */,
 				A639E0641D1752D800D72AD7 /* Main.storyboard */,
+				A639E0721D17536100D72AD7 /* TipCalculatorModel.swift */,
 				A639E0671D1752D800D72AD7 /* Assets.xcassets */,
 				A639E0691D1752D800D72AD7 /* LaunchScreen.storyboard */,
 				A639E06C1D1752D800D72AD7 /* Info.plist */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					A639E05C1D1752D800D72AD7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2HH9GM6N45;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A639E0631D1752D800D72AD7 /* ViewController.swift in Sources */,
+				A639E0731D17536100D72AD7 /* TipCalculatorModel.swift in Sources */,
 				A639E0611D1752D800D72AD7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +254,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sophian.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +268,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sophian.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +297,7 @@
 				A639E0711D1752D800D72AD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
